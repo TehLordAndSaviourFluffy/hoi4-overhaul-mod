@@ -16,6 +16,10 @@ focus_tree = {
 
 	continuous_focus_position = { x = 20 y = 1000 }
 
+	########################################
+	########        Industry        ######## 
+	########################################
+
     focus = {
 		id = CHI_war_preparations
 		icon = GFX_goal_generic_national_unity
@@ -351,6 +355,341 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = CHI_monetary_reforms
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_infrastructure_1
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_war_preparations }
+		x = 2
+		y = 1
+		relative_position_id = CHI_war_preparations
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_infrastructure_2
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_infrastructure_1 }
+		x = 0
+		y = 1
+		relative_position_id = CHI_infrastructure_1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_heavy_industries_1
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_infrastructure_1 }
+		x = 2
+		y = 1
+		relative_position_id = CHI_infrastructure_1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+
+	focus = {
+		id = CHI_heavy_industries_2
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_heavy_industries_1 }
+		x = 0
+		y = 1
+		relative_position_id = CHI_heavy_industries_1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	########################################
+	########          Army          ######## 
+	########################################
+
+	focus = {
+		id = CHI_
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus =  }
+		x = 0
+		y = 0
+		relative_position_id = 
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus =  }
+		x = 0
+		y = 0
+		relative_position_id = 
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus =  }
+		x = 0
+		y = 0
+		relative_position_id = 
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus =  }
+		x = 0
+		y = 0
+		relative_position_id = 
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus =  }
+		x = 0
+		y = 0
+		relative_position_id = 
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus =  }
+		x = 0
+		y = 0
+		relative_position_id = 
 
 		cost = 10
 
