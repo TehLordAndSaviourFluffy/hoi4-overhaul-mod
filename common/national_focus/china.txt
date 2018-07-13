@@ -17,9 +17,9 @@ focus_tree = {
 	continuous_focus_position = { x = 20 y = 1000 }
 
     focus = {
-		id = CHI_three_principles_of_the_people
+		id = CHI_war_preparations
 		icon = GFX_goal_generic_national_unity
-		x = 5
+		x = 8
 		y = 0
 
 		cost = 10
@@ -41,11 +41,438 @@ focus_tree = {
 		available_if_capitulated = no
 
 		complete_tooltip = {
-
 		}
 
 		completion_reward = {
-			add_stability = 0.05
+		}
+	}
+
+
+	focus = {
+		id = CHI_expand_industries_1
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_war_preparations }
+		x = 0
+		y = 1
+		relative_position_id = CHI_war_preparations
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = CHI_expand_industries_2
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_expand_industries_1 }
+		x = 0
+		y = 1
+		relative_position_id = CHI_expand_industries_1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_expand_industries_3
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_expand_industries_2 }
+		x = 0
+		y = 1
+		relative_position_id = CHI_expand_industries_2
+		pre
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_centralize_industries
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_expand_industries_3 }
+		x = 0
+		y = 1
+		relative_position_id = CHI_expand_industries_3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_education_reforms
+		icon = GFX_goal_generic_national_unity
+		x = 4
+		y = 0
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_public_schools
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_education_reforms  }
+		x = 0
+		y = 1
+		relative_position_id = CHI_education_reforms
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_compulsory_education
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_public_schools }
+		x = 0
+		y = 2
+		relative_position_id = CHI_public_schools
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_create_academy_science
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_centralize_industries }
+		prerequisite = { focus = CHI_compulsory_education }
+		x = -2
+		y = 1
+		relative_position_id = CHI_centralize_industries
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_monetary_reforms
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_education_reforms focus = CHI_war_preparations }
+		x = 2
+		y = 1
+		relative_position_id = CHI_education_reforms
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_government_bailouts
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_monetary_reforms }
+		x = 0
+		y = 1
+		relative_position_id = CHI_monetary_reforms
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus =  }
+		x = 0
+		y = 0
+		relative_position_id = 
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus =  }
+		x = 0
+		y = 0
+		relative_position_id = 
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus =  }
+		x = 0
+		y = 0
+		relative_position_id = 
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
 		}
 	}
 

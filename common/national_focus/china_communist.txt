@@ -86,7 +86,6 @@ focus_tree = {
 		id = PRC_agrarian_socialism
 		icon = GFX_focus_prc_agrarian_socialism
 		prerequisite = { focus = PRC_strengthen_the_central_secretariat }
-		mutually_exclusive = { focus = PRC_marxist_orthodoxy focus = PRC_social_democracy }
 		x = 0
 		y = 1
 		relative_position_id = PRC_strengthen_the_central_secretariat
