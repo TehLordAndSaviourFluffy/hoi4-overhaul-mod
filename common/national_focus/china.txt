@@ -515,16 +515,14 @@ focus_tree = {
 	}
 
 	########################################
-	########          Army          ######## 
+	########       Japan War        ######## 
 	########################################
 
 	focus = {
-		id = CHI_
+		id = CHI_national_defence_council
 		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus =  }
-		x = 0
+		x = 15
 		y = 0
-		relative_position_id = 
 
 		cost = 10
 
@@ -552,12 +550,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_
+		id = CHI_big_rear_concept
 		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus =  }
+		prerequisite = { focus = CHI_national_defence_council }
 		x = 0
-		y = 0
-		relative_position_id = 
+		y = 1
+		relative_position_id = CHI_national_defence_council
 
 		cost = 10
 
@@ -585,12 +583,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_
+		id = CHI_lure_them_in
 		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus =  }
+		prerequisite = { focus = CHI_big_rear_concept }
 		x = 0
-		y = 0
-		relative_position_id = 
+		y = 1
+		relative_position_id = CHI_big_rear_concept
 
 		cost = 10
 
@@ -618,12 +616,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_
+		id = CHI_annex_prc
 		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus =  }
-		x = 0
-		y = 0
-		relative_position_id = 
+		prerequisite = { focus = CHI_lure_them_in }
+		x = -1
+		y = 1
+		relative_position_id = CHI_lure_them_in
 
 		cost = 10
 
@@ -651,12 +649,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_
+		id = CHI_annex_sinkiang
 		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus =  }
+		prerequisite = { focus = CHI_annex_prc }
 		x = 0
-		y = 0
-		relative_position_id = 
+		y = 1
+		relative_position_id = CHI_annex_prc
 
 		cost = 10
 
@@ -684,12 +682,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_
+		id = CHI_scorched_earth_tactic
 		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus =  }
-		x = 0
-		y = 0
-		relative_position_id = 
+		prerequisite = { focus = CHI_lure_them_in }
+		x = 1
+		y = 1
+		relative_position_id = CHI_lure_them_in
 
 		cost = 10
 
@@ -717,12 +715,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_
+		id = CHI_foreign_aid
 		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus =  }
-		x = 0
-		y = 0
-		relative_position_id = 
+		prerequisite = { focus = CHI_national_defence_council }
+		x = 4
+		y = 1
+		relative_position_id = CHI_national_defence_council
 
 		cost = 10
 
@@ -750,12 +748,45 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_
+		id = CHI_burma_road_open
 		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus =  }
+		prerequisite = { focus = CHI_foreign_aid }
 		x = 0
-		y = 0
-		relative_position_id = 
+		y = 1
+		relative_position_id = CHI_foreign_aid
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = CHI_flying_tiger
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_burma_road_open }
+		x = 0
+		y = 1
+		relative_position_id = CHI_burma_road_open
 
 		cost = 10
 
@@ -783,12 +814,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_
+		id = CHI_burma_road_open
 		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus =  }
+		prerequisite = { focus = CHI_foreign_aid }
 		x = 0
-		y = 0
-		relative_position_id = 
+		y = 1
+		relative_position_id = CHI_foreign_aid
 
 		cost = 10
 
@@ -814,5 +845,601 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
+
+	focus = {
+		id = CHI_burma_road_open
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_foreign_aid }
+		x = 0
+		y = 1
+		relative_position_id = CHI_foreign_aid
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_burma_road_open
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_foreign_aid }
+		x = 0
+		y = 1
+		relative_position_id = CHI_foreign_aid
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_burma_road_open
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_foreign_aid }
+		x = 0
+		y = 1
+		relative_position_id = CHI_foreign_aid
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_burma_road_open
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_foreign_aid }
+		x = 0
+		y = 1
+		relative_position_id = CHI_foreign_aid
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_burma_road_open
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_foreign_aid }
+		x = 0
+		y = 1
+		relative_position_id = CHI_foreign_aid
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_burma_road_open
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_foreign_aid }
+		x = 0
+		y = 1
+		relative_position_id = CHI_foreign_aid
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_burma_road_open
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_foreign_aid }
+		x = 0
+		y = 1
+		relative_position_id = CHI_foreign_aid
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_burma_road_open
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_foreign_aid }
+		x = 0
+		y = 1
+		relative_position_id = CHI_foreign_aid
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_burma_road_open
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_foreign_aid }
+		x = 0
+		y = 1
+		relative_position_id = CHI_foreign_aid
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_burma_road_open
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_foreign_aid }
+		x = 0
+		y = 1
+		relative_position_id = CHI_foreign_aid
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_burma_road_open
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_foreign_aid }
+		x = 0
+		y = 1
+		relative_position_id = CHI_foreign_aid
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_burma_road_open
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_foreign_aid }
+		x = 0
+		y = 1
+		relative_position_id = CHI_foreign_aid
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_burma_road_open
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_foreign_aid }
+		x = 0
+		y = 1
+		relative_position_id = CHI_foreign_aid
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_burma_road_open
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_foreign_aid }
+		x = 0
+		y = 1
+		relative_position_id = CHI_foreign_aid
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_burma_road_open
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_foreign_aid }
+		x = 0
+		y = 1
+		relative_position_id = CHI_foreign_aid
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_burma_road_open
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_foreign_aid }
+		x = 0
+		y = 1
+		relative_position_id = CHI_foreign_aid
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_burma_road_open
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_foreign_aid }
+		x = 0
+		y = 1
+		relative_position_id = CHI_foreign_aid
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_burma_road_open
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_foreign_aid }
+		x = 0
+		y = 1
+		relative_position_id = CHI_foreign_aid
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+
 
 }
