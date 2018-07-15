@@ -23,7 +23,7 @@ focus_tree = {
     focus = {
 		id = CHI_war_preparations
 		icon = GFX_goal_generic_national_unity
-		x = 8
+		x = 14
 		y = 0
 
 		cost = 10
@@ -188,7 +188,7 @@ focus_tree = {
 	focus = {
 		id = CHI_education_reforms
 		icon = GFX_goal_generic_national_unity
-		x = 4
+		x = 10
 		y = 0
 		cost = 10
 
@@ -521,7 +521,7 @@ focus_tree = {
 	focus = {
 		id = CHI_national_defence_council
 		icon = GFX_goal_generic_national_unity
-		x = 15
+		x = 21
 		y = 0
 
 		cost = 10
@@ -718,7 +718,7 @@ focus_tree = {
 		id = CHI_foreign_aid
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = CHI_national_defence_council }
-		x = 4
+		x = 3
 		y = 1
 		relative_position_id = CHI_national_defence_council
 
@@ -813,13 +813,84 @@ focus_tree = {
 		}
 	}
 
+
+	########################################
+	########         Army           ######## 
+	########################################
+
+
 	focus = {
-		id = CHI_burma_road_open
+		id = CHI_reorganize_nra
 		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = CHI_foreign_aid }
-		x = 0
+		x = 4
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	### Land ###
+
+	focus = {
+		id = CHI_reform_academy
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_reorganize_nra }
+		x = -3
 		y = 1
-		relative_position_id = CHI_foreign_aid
+		relative_position_id = CHI_reorganize_nra
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_modern_equipment
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_reform_academy }
+		x = -1
+		y = 1
+		relative_position_id = CHI_reform_academy
 
 		cost = 10
 
@@ -847,12 +918,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_burma_road_open
+		id = CHI_modern_artillery
 		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = CHI_foreign_aid }
-		x = 0
+		prerequisite = { focus = CHI_reform_academy }
+		x = 1
 		y = 1
-		relative_position_id = CHI_foreign_aid
+		relative_position_id = CHI_reform_academy
 
 		cost = 10
 
@@ -880,12 +951,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_burma_road_open
+		id = CHI_modern_officers
 		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = CHI_foreign_aid }
-		x = 0
+		prerequisite = { focus = CHI_modern_equipment }
+		prerequisite = { focus = CHI_modern_artillery }
+		x = 1
 		y = 1
-		relative_position_id = CHI_foreign_aid
+		relative_position_id = CHI_modern_equipment
 
 		cost = 10
 
@@ -913,12 +985,47 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_burma_road_open
+		id = CHI_modernize_army
 		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = CHI_foreign_aid }
+		prerequisite = { focus = CHI_modern_officers }
+		x = 1
+		y = 1
+		relative_position_id = CHI_modern_officers
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	#### Air ####
+
+	focus = {
+		id = CHI_study_modern_aircraft
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_reorganize_nra }
 		x = 0
 		y = 1
-		relative_position_id = CHI_foreign_aid
+		relative_position_id = CHI_reorganize_nra
 
 		cost = 10
 
@@ -946,12 +1053,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_burma_road_open
+		id = CHI_modernize_fighters
 		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = CHI_foreign_aid }
+		prerequisite = { focus = CHI_study_modern_aircraft }
 		x = 0
 		y = 1
-		relative_position_id = CHI_foreign_aid
+		relative_position_id = CHI_study_modern_aircraft
 
 		cost = 10
 
@@ -979,12 +1086,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_burma_road_open
+		id = CHI_expansion_of_airforce
 		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = CHI_foreign_aid }
+		prerequisite = { focus = CHI_modernize_fighters }
 		x = 0
 		y = 1
-		relative_position_id = CHI_foreign_aid
+		relative_position_id = CHI_modernize_fighters
 
 		cost = 10
 
@@ -1012,12 +1119,46 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_burma_road_open
+		id = CHI_modernize_the_airforce
 		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = CHI_foreign_aid }
+		prerequisite = { focus = CHI_expansion_of_airforce }
 		x = 0
 		y = 1
-		relative_position_id = CHI_foreign_aid
+		relative_position_id = CHI_expansion_of_airforce
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	### Navy ###
+	focus = {
+		id = CHI_purchase_foreign_ships
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_reorganize_nra }
+		x = 3
+		y = 1
+		relative_position_id = CHI_reorganize_nra
 
 		cost = 10
 
@@ -1045,12 +1186,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_burma_road_open
+		id = CHI_expand_jiangnan
 		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = CHI_foreign_aid }
-		x = 0
+		prerequisite = { focus = CHI_purchase_foreign_ships }
+		x = -1
 		y = 1
-		relative_position_id = CHI_foreign_aid
+		relative_position_id = CHI_purchase_foreign_ships
 
 		cost = 10
 
@@ -1078,12 +1219,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_burma_road_open
+		id = CHI_east_china_fleet
 		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = CHI_foreign_aid }
-		x = 0
+		prerequisite = { focus = CHI_purchase_foreign_ships }
+		x = 1
 		y = 1
-		relative_position_id = CHI_foreign_aid
+		relative_position_id = CHI_purchase_foreign_ships
 
 		cost = 10
 
@@ -1111,12 +1252,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_burma_road_open
+		id = CHI_revolutionise_battleships
 		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = CHI_foreign_aid }
-		x = 0
+		prerequisite = { focus = CHI_expand_jiangnan }
+		prerequisite = { focus = CHI_east_china_fleet }
+		x = 1
 		y = 1
-		relative_position_id = CHI_foreign_aid
+		relative_position_id = CHI_expand_jiangnan
 
 		cost = 10
 
@@ -1144,12 +1286,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_burma_road_open
+		id = CHI_modernize_navy
 		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = CHI_foreign_aid }
-		x = 0
+		prerequisite = { focus = CHI_revolutionise_battleships }
+		x = -1
 		y = 1
-		relative_position_id = CHI_foreign_aid
+		relative_position_id = CHI_revolutionise_battleships
 
 		cost = 10
 
@@ -1175,14 +1317,18 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
+
+	### research slot ###
 
 	focus = {
-		id = CHI_burma_road_open
+		id = CHI_extra_research_slot
 		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = CHI_foreign_aid }
+		prerequisite = { focus = CHI_modernize_army }
+		prerequisite = { focus = CHI_modernize_the_airforce }
+		prerequisite = { focus = CHI_modernize_navy }
 		x = 0
 		y = 1
-		relative_position_id = CHI_foreign_aid
+		relative_position_id = CHI_modernize_the_airforce
 
 		cost = 10
 
@@ -1209,137 +1355,9 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = CHI_burma_road_open
-		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = CHI_foreign_aid }
-		x = 0
-		y = 1
-		relative_position_id = CHI_foreign_aid
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available = {
-		
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-		}
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = CHI_burma_road_open
-		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = CHI_foreign_aid }
-		x = 0
-		y = 1
-		relative_position_id = CHI_foreign_aid
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available = {
-		
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-		}
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = CHI_burma_road_open
-		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = CHI_foreign_aid }
-		x = 0
-		y = 1
-		relative_position_id = CHI_foreign_aid
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available = {
-		
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-		}
-
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = CHI_burma_road_open
-		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = CHI_foreign_aid }
-		x = 0
-		y = 1
-		relative_position_id = CHI_foreign_aid
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available = {
-		
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-		}
-
-		completion_reward = {
-		}
-	}
+	########################################
+	########       Political        ######## 
+	########################################
 
 	focus = {
 		id = CHI_burma_road_open
