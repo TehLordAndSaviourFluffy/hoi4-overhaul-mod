@@ -23,7 +23,7 @@ focus_tree = {
     focus = {
 		id = CHI_war_preparations
 		icon = GFX_goal_generic_national_unity
-		x = 14
+		x = 16
 		y = 0
 
 		cost = 10
@@ -54,7 +54,7 @@ focus_tree = {
 
 	focus = {
 		id = CHI_expand_industries_1
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_focus_focus_generic_industry_1
 		prerequisite = { focus = CHI_war_preparations }
 		x = 0
 		y = 1
@@ -87,7 +87,7 @@ focus_tree = {
 	
 	focus = {
 		id = CHI_expand_industries_2
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_focus_generic_industry_2
 		prerequisite = { focus = CHI_expand_industries_1 }
 		x = 0
 		y = 1
@@ -120,7 +120,7 @@ focus_tree = {
 
 	focus = {
 		id = CHI_expand_industries_3
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_focus_generic_industry_3
 		prerequisite = { focus = CHI_expand_industries_2 }
 		x = 0
 		y = 1
@@ -188,7 +188,7 @@ focus_tree = {
 	focus = {
 		id = CHI_education_reforms
 		icon = GFX_goal_generic_national_unity
-		x = 10
+		x = 12
 		y = 0
 		cost = 10
 
@@ -521,7 +521,7 @@ focus_tree = {
 	focus = {
 		id = CHI_national_defence_council
 		icon = GFX_goal_generic_national_unity
-		x = 21
+		x = 1
 		y = 0
 
 		cost = 10
@@ -822,7 +822,7 @@ focus_tree = {
 	focus = {
 		id = CHI_reorganize_nra
 		icon = GFX_goal_generic_national_unity
-		x = 4
+		x = 26
 		y = 0
 
 		cost = 10
@@ -1360,12 +1360,10 @@ focus_tree = {
 	########################################
 
 	focus = {
-		id = CHI_burma_road_open
+		id = CHI_government_reforms
 		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = CHI_foreign_aid }
-		x = 0
-		y = 1
-		relative_position_id = CHI_foreign_aid
+		x = 8
+		y = 0
 
 		cost = 10
 
@@ -1393,12 +1391,49 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_burma_road_open
+		id = CHI_three_principles
 		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = CHI_foreign_aid }
+		prerequisite = { focus = CHI_government_reforms }
 		x = 0
 		y = 1
-		relative_position_id = CHI_foreign_aid
+		relative_position_id = CHI_government_reforms
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+#####################
+#### Nationalism ####
+#####################
+
+	focus = {
+		id = CHI_nationalism.
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_three_principles }
+		x = 0
+		y = 1
+		relative_position_id = CHI_three_principles
 
 		cost = 10
 
@@ -1426,12 +1461,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_burma_road_open
+		id = CHI_united_we_stand
 		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = CHI_foreign_aid }
+		prerequisite = { focus = CHI_nationalism. }
 		x = 0
 		y = 1
-		relative_position_id = CHI_foreign_aid
+		relative_position_id = CHI_nationalism.
 
 		cost = 10
 
@@ -1458,6 +1493,210 @@ focus_tree = {
 		}
 	}
 
+########################
+#### Democraticisim ####
+########################
 
+	focus = {
+		id = CHI_democraticism
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_three_principles }
+		x = -2
+		y = 1
+		relative_position_id = CHI_three_principles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_constitution_draft
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_democraticism }
+		x = 0
+		y = 1
+		relative_position_id = CHI_democraticism
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_constitution_of_the_roc
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_constitution_draft }
+		x = 0
+		y = 1
+		relative_position_id = CHI_constitution_draft
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+#####################
+#### Civilianism ####
+#####################
+
+	focus = {
+		id = CHI_civilianism
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_three_principles }
+		x = 2
+		y = 1
+		relative_position_id = CHI_three_principles
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_chinese_war_economy
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_civilianism }
+		x = 0
+		y = 1
+		relative_position_id = CHI_civilianism
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CHI_healthcare_program
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = CHI_chinese_war_economy }
+		x = 0
+		y = 1
+		relative_position_id = CHI_chinese_war_economy
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		}
+	}
 
 }
