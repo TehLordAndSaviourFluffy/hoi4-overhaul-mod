@@ -1,0 +1,12 @@
+spriteTypes = {
+	###MOD
+	SpriteType = {
+		name = "GFX_focus_government_bailout"
+		texturefile = "gfx/interface/goals/focus_government_bailout.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_NRA
+		texturefile = "gfx/interface/goals/focus_NRA.dds"
+	}
+}
